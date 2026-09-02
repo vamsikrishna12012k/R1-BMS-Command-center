@@ -16,9 +16,10 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Live command center for UPS fleet health, HVAC status, building load, energy use and active alarms in real time.",
+          "Real-time building operations monitoring for UPS systems, HVAC status, building load, energy use and active alarms.",
       },
       { property: "og:title", content: "R1 BMS Command Center" },
+      { name: "twitter:title", content: "R1 BMS Command Center" },
       {
         property: "og:description",
         content: "Real-time building operations overview: UPS, AHU, VAV, energy and electrical systems.",
