@@ -1,0 +1,321 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Apple-style design system for the BMS.
+ * Light: iOS/macOS system grays on white cards. Dark: true-black canvas with
+ * elevated graphite panels. Accent: system blue. Status ramp follows the
+ * Apple system colors (green / yellow / orange / red).
+ * Both modes are first-class; the theme toggle switches the .dark class.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+
+  --color-panel: var(--panel);
+  --color-panel-2: var(--panel-2);
+  --color-line: var(--line);
+  --color-flow: var(--flow);
+  --color-copper: var(--copper);
+  --color-cold: var(--cold);
+  --color-warm: var(--warm);
+  --color-ok: var(--sev-ok);
+  --color-info: var(--sev-info);
+  --color-warn: var(--sev-warn);
+  --color-major: var(--sev-major);
+  --color-crit: var(--sev-crit);
+  --color-offline: var(--sev-offline);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --font-display: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "SF Mono", ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, monospace;
+
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.06), 0 6px 18px -8px rgb(0 0 0 / 0.14);
+}
+
+/* ---------------- Light (default) ---------------- */
+:root {
+  --radius: 0.75rem;
+  --background: oklch(0.968 0.002 250);
+  --foreground: oklch(0.19 0.006 260);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.19 0.006 260);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.19 0.006 260);
+  --primary: oklch(0.585 0.198 259);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.945 0.003 250);
+  --secondary-foreground: oklch(0.24 0.006 260);
+  --muted: oklch(0.936 0.003 250);
+  --muted-foreground: oklch(0.55 0.008 260);
+  --accent: oklch(0.94 0.004 250);
+  --accent-foreground: oklch(0.22 0.006 260);
+  --destructive: oklch(0.585 0.216 25);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.9 0.003 250);
+  --input: oklch(0.9 0.003 250);
+  --ring: oklch(0.585 0.198 259);
+
+  --panel: oklch(1 0 0);
+  --panel-2: oklch(0.972 0.002 250);
+  --line: oklch(0.9 0.003 250);
+
+  --flow: oklch(0.585 0.198 259);
+  --copper: oklch(0.63 0.15 55);
+  --cold: oklch(0.62 0.13 232);
+  --warm: oklch(0.63 0.19 35);
+
+  --sev-ok: oklch(0.6 0.17 148);
+  --sev-info: oklch(0.585 0.198 259);
+  --sev-warn: oklch(0.72 0.16 82);
+  --sev-major: oklch(0.68 0.18 52);
+  --sev-crit: oklch(0.585 0.216 25);
+  --sev-offline: oklch(0.62 0.006 260);
+
+  --chart-1: oklch(0.585 0.198 259);
+  --chart-2: oklch(0.6 0.17 148);
+  --chart-3: oklch(0.72 0.16 82);
+  --chart-4: oklch(0.63 0.15 55);
+  --chart-5: oklch(0.55 0.19 305);
+
+  --sidebar: oklch(0.978 0.002 250);
+  --sidebar-foreground: oklch(0.22 0.006 260);
+  --sidebar-primary: oklch(0.585 0.198 259);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.93 0.004 250);
+  --sidebar-accent-foreground: oklch(0.22 0.006 260);
+  --sidebar-border: oklch(0.9 0.003 250);
+  --sidebar-ring: oklch(0.585 0.198 259);
+}
+
+/* ---------------- Dark ---------------- */
+.dark {
+  --background: oklch(0.16 0.003 260);
+  --foreground: oklch(0.97 0.002 260);
+  --card: oklch(0.212 0.004 260);
+  --card-foreground: oklch(0.97 0.002 260);
+  --popover: oklch(0.235 0.004 260);
+  --popover-foreground: oklch(0.97 0.002 260);
+  --primary: oklch(0.68 0.17 254);
+  --primary-foreground: oklch(0.16 0.01 260);
+  --secondary: oklch(0.27 0.005 260);
+  --secondary-foreground: oklch(0.96 0.002 260);
+  --muted: oklch(0.27 0.005 260);
+  --muted-foreground: oklch(0.7 0.006 260);
+  --accent: oklch(0.3 0.006 260);
+  --accent-foreground: oklch(0.97 0.002 260);
+  --destructive: oklch(0.63 0.2 25);
+  --destructive-foreground: oklch(0.98 0.005 25);
+  --border: oklch(0.31 0.005 260);
+  --input: oklch(0.31 0.005 260);
+  --ring: oklch(0.68 0.17 254);
+
+  --panel: oklch(0.212 0.004 260);
+  --panel-2: oklch(0.252 0.005 260);
+  --line: oklch(0.31 0.005 260);
+
+  --flow: oklch(0.68 0.17 254);
+  --copper: oklch(0.76 0.13 62);
+  --cold: oklch(0.75 0.11 226);
+  --warm: oklch(0.72 0.16 38);
+
+  --sev-ok: oklch(0.76 0.17 150);
+  --sev-info: oklch(0.68 0.17 254);
+  --sev-warn: oklch(0.82 0.15 88);
+  --sev-major: oklch(0.75 0.16 55);
+  --sev-crit: oklch(0.68 0.19 24);
+  --sev-offline: oklch(0.58 0.006 260);
+
+  --chart-1: oklch(0.68 0.17 254);
+  --chart-2: oklch(0.76 0.17 150);
+  --chart-3: oklch(0.82 0.15 88);
+  --chart-4: oklch(0.76 0.13 62);
+  --chart-5: oklch(0.7 0.16 310);
+
+  --sidebar: oklch(0.185 0.004 260);
+  --sidebar-foreground: oklch(0.95 0.002 260);
+  --sidebar-primary: oklch(0.68 0.17 254);
+  --sidebar-primary-foreground: oklch(0.16 0.01 260);
+  --sidebar-accent: oklch(0.27 0.005 260);
+  --sidebar-accent-foreground: oklch(0.97 0.002 260);
+  --sidebar-border: oklch(0.31 0.005 260);
+  --sidebar-ring: oklch(0.68 0.17 254);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+@utility label-xs {
+  font-size: 0.6875rem;
+  line-height: 1rem;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+  color: var(--color-muted-foreground);
+}
+
+@utility num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+@utility panel-surface {
+  background-color: var(--color-panel);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+@keyframes flow-dash {
+  to {
+    stroke-dashoffset: -36;
+  }
+}
+
+@keyframes flow-strip {
+  to {
+    background-position: 40px 0;
+  }
+}
+
+@keyframes lamp-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+
+@keyframes stream-draw {
+  0% {
+    stroke-dashoffset: var(--stream-len, 240);
+    opacity: 0;
+  }
+  12% {
+    opacity: var(--stream-opacity, 0.5);
+  }
+  85% {
+    opacity: var(--stream-opacity, 0.5);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes soft-breathe {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.75;
+  }
+}
+
+/* Continuous, even-speed flow: no easing so the motion never stutters. */
+.flow-dash {
+  stroke-dasharray: 6 12;
+  stroke-linecap: round;
+  animation: flow-dash 1.8s linear infinite;
+}
+
+.flow-dash-slow {
+  stroke-dasharray: 4 14;
+  stroke-linecap: round;
+  animation: flow-dash 3.6s linear infinite;
+}
+
+.lamp-pulse {
+  animation: lamp-pulse 2.2s ease-in-out infinite;
+}
+
+.soft-breathe {
+  animation: soft-breathe 4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flow-dash,
+  .flow-dash-slow,
+  .lamp-pulse,
+  .soft-breathe {
+    animation: none;
+  }
+}
+
+
+.grid-backdrop {
+  background-image:
+    linear-gradient(to right, color-mix(in oklab, var(--color-line) 55%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, var(--color-line) 55%, transparent) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
