@@ -11,9 +11,9 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/reports")({
   head: () => ({
     meta: [
-      { title: "Reports — Meridian BMS" },
+      { title: "Reports — R1 BMS Command Center" },
       { name: "description", content: "Generate and export energy, UPS availability, HVAC performance and alarm summary reports as CSV." },
-      { property: "og:title", content: "Reports — Meridian BMS" },
+      { property: "og:title", content: "Reports — R1 BMS Command Center" },
       { property: "og:description", content: "Export operational reports for energy, UPS, HVAC and alarms." },
     ],
   }),

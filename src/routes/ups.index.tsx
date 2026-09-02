@@ -10,13 +10,13 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/ups/")({
   head: () => ({
     meta: [
-      { title: "UPS Fleet — Meridian BMS" },
+      { title: "UPS Fleet — R1 BMS Command Center" },
       {
         name: "description",
         content:
           "Monitor the uninterruptible power supply fleet: load, battery autonomy, operating mode and faults for every unit.",
       },
-      { property: "og:title", content: "UPS Fleet — Meridian BMS" },
+      { property: "og:title", content: "UPS Fleet — R1 BMS Command Center" },
       { property: "og:description", content: "Live UPS fleet monitoring with load, battery and fault status." },
     ],
   }),

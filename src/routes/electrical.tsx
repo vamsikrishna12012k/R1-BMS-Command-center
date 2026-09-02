@@ -14,9 +14,9 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/electrical")({
   head: () => ({
     meta: [
-      { title: "Electrical Monitoring — Meridian BMS" },
+      { title: "Electrical Monitoring — R1 BMS Command Center" },
       { name: "description", content: "Single-line electrical distribution: panel telemetry, breaker states and switching controls from utility to load." },
-      { property: "og:title", content: "Electrical Monitoring — Meridian BMS" },
+      { property: "og:title", content: "Electrical Monitoring — R1 BMS Command Center" },
       { property: "og:description", content: "Live single-line diagram and electrical panel monitoring." },
     ],
   }),

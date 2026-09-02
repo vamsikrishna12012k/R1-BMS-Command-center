@@ -11,9 +11,9 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/hvac/cassette")({
   head: () => ({
     meta: [
-      { title: "Cassette AC Units — Meridian BMS" },
+      { title: "Cassette AC Units — R1 BMS Command Center" },
       { name: "description", content: "Room-level cassette air conditioning: on/off state, room temperature, setpoint, mode and fan speed." },
-      { property: "og:title", content: "Cassette AC Units — Meridian BMS" },
+      { property: "og:title", content: "Cassette AC Units — R1 BMS Command Center" },
       { property: "og:description", content: "Control cassette AC units room by room across the campus." },
     ],
   }),

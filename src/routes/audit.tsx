@@ -9,9 +9,9 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/audit")({
   head: () => ({
     meta: [
-      { title: "Audit Logs — Meridian BMS" },
+      { title: "Audit Logs — R1 BMS Command Center" },
       { name: "description", content: "Immutable record of every control command, setpoint change and denied action across the building management platform." },
-      { property: "og:title", content: "Audit Logs — Meridian BMS" },
+      { property: "og:title", content: "Audit Logs — R1 BMS Command Center" },
       { property: "og:description", content: "Traceable log of all operator commands and system changes." },
     ],
   }),

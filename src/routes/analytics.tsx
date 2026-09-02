@@ -10,9 +10,9 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/analytics")({
   head: () => ({
     meta: [
-      { title: "Analytics & Trends — Meridian BMS" },
+      { title: "Analytics & Trends — R1 BMS Command Center" },
       { name: "description", content: "Cross-system analytics: compare energy, UPS load and HVAC performance over configurable time ranges with CSV export." },
-      { property: "og:title", content: "Analytics & Trends — Meridian BMS" },
+      { property: "og:title", content: "Analytics & Trends — R1 BMS Command Center" },
       { property: "og:description", content: "Compare building systems over time with exportable trend analysis." },
     ],
   }),

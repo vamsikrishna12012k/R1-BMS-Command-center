@@ -20,7 +20,7 @@ export function hashString(s: string) {
   return h >>> 0;
 }
 
-export const CAMPUS = "Meridian Technology Campus";
+export const CAMPUS = "R1 Technology Campus";
 export const BUILDINGS = ["Tower A", "Tower B"];
 export const FLOORS = ["L1", "L2", "L3", "L4", "L5", "B1"];
 

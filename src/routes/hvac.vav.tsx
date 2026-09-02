@@ -12,9 +12,9 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/hvac/vav")({
   head: () => ({
     meta: [
-      { title: "VAV Terminals & Duct View — Meridian BMS" },
+      { title: "VAV Terminals & Duct View — R1 BMS Command Center" },
       { name: "description", content: "Interactive duct layout with live VAV damper positions, zone airflow and temperature control." },
-      { property: "og:title", content: "VAV Terminals & Duct View — Meridian BMS" },
+      { property: "og:title", content: "VAV Terminals & Duct View — R1 BMS Command Center" },
       { property: "og:description", content: "Interactive duct network and variable air volume terminal control." },
     ],
   }),

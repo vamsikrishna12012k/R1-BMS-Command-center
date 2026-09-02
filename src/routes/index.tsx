@@ -12,13 +12,13 @@ import type { Severity } from "@/lib/bms/types";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Command Center — Meridian BMS" },
+      { title: "R1 BMS Command Center" },
       {
         name: "description",
         content:
-          "Live command center for the Meridian campus: UPS fleet health, HVAC status, building load, energy use and active alarms in real time.",
+          "Live command center for UPS fleet health, HVAC status, building load, energy use and active alarms in real time.",
       },
-      { property: "og:title", content: "Command Center — Meridian BMS" },
+      { property: "og:title", content: "R1 BMS Command Center" },
       {
         property: "og:description",
         content: "Real-time building operations overview: UPS, AHU, VAV, energy and electrical systems.",

@@ -9,9 +9,9 @@ import { nf } from "@/lib/bms/format";
 export const Route = createFileRoute("/hvac/ahu/")({
   head: () => ({
     meta: [
-      { title: "Air Handling Units — Meridian BMS" },
+      { title: "Air Handling Units — R1 BMS Command Center" },
       { name: "description", content: "Live AHU status: supply and return temperature, airflow, filter condition, damper and valve positions." },
-      { property: "og:title", content: "Air Handling Units — Meridian BMS" },
+      { property: "og:title", content: "Air Handling Units — R1 BMS Command Center" },
       { property: "og:description", content: "Monitor and control every air handling unit across the campus." },
     ],
   }),

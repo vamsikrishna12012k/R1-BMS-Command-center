@@ -11,9 +11,9 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/settings")({
   head: () => ({
     meta: [
-      { title: "System Settings — Meridian BMS" },
+      { title: "System Settings — R1 BMS Command Center" },
       { name: "description", content: "Platform appearance, gateway health and field protocol configuration for Modbus TCP and BACnet/IP integration." },
-      { property: "og:title", content: "System Settings — Meridian BMS" },
+      { property: "og:title", content: "System Settings — R1 BMS Command Center" },
       { property: "og:description", content: "Appearance, gateway status and field protocol configuration." },
     ],
   }),

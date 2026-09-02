@@ -11,9 +11,9 @@ import type { Role } from "@/lib/bms/types";
 export const Route = createFileRoute("/users")({
   head: () => ({
     meta: [
-      { title: "User Management — Meridian BMS" },
+      { title: "User Management — R1 BMS Command Center" },
       { name: "description", content: "Operator roster and role-based access control matrix for supervisory, engineering and view-only building system access." },
-      { property: "og:title", content: "User Management — Meridian BMS" },
+      { property: "og:title", content: "User Management — R1 BMS Command Center" },
       { property: "og:description", content: "Manage operators and role-based permissions." },
     ],
   }),
@@ -33,13 +33,13 @@ const CAPABILITIES: { label: string; minRole: Role }[] = [
 ];
 
 const ROSTER: { name: string; email: string; role: Role; shift: string; minsAgo: number }[] = [
-  { name: "A. Rahman", email: "a.rahman@meridian.io", role: "Administrator", shift: "Day", minsAgo: 3 },
-  { name: "S. Iyer", email: "s.iyer@meridian.io", role: "BMS Manager", shift: "Day", minsAgo: 12 },
-  { name: "M. Okafor", email: "m.okafor@meridian.io", role: "Engineer", shift: "Day", minsAgo: 41 },
-  { name: "L. Fernandes", email: "l.fernandes@meridian.io", role: "Engineer", shift: "Night", minsAgo: 190 },
-  { name: "K. Tanaka", email: "k.tanaka@meridian.io", role: "Operator", shift: "Night", minsAgo: 8 },
-  { name: "P. Novak", email: "p.novak@meridian.io", role: "Operator", shift: "Swing", minsAgo: 76 },
-  { name: "J. Bell", email: "j.bell@meridian.io", role: "Viewer", shift: "Day", minsAgo: 320 },
+  { name: "Vamsi", email: "vkrishna11@r1rcm.com", role: "Administrator", shift: "Day", minsAgo: 3 },
+  { name: "Nitesh", email: "nbjain@r1rcm.com", role: "BMS Manager", shift: "Day", minsAgo: 12 },
+  { name: "Vamsi", email: "vamsi@r1rcm.com", role: "Engineer", shift: "Day", minsAgo: 41 },
+  { name: "Madhumitha", email: "madhumitha@r1bms.local", role: "Engineer", shift: "Night", minsAgo: 190 },
+  { name: "Jagadish Nathari", email: "jagadish@r1bms.local", role: "Operator", shift: "Night", minsAgo: 8 },
+  { name: "Raghu Kathroju", email: "raghu@r1bms.local", role: "Operator", shift: "Swing", minsAgo: 76 },
+  { name: "Test", email: "test@r1bms.local", role: "Viewer", shift: "Day", minsAgo: 320 },
 ];
 
 function UsersPage() {

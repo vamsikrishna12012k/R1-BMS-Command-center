@@ -11,9 +11,9 @@ import type { AlarmState } from "@/lib/bms/types";
 export const Route = createFileRoute("/alarms")({
   head: () => ({
     meta: [
-      { title: "Alarms & Events — Meridian BMS" },
+      { title: "Alarms & Events — R1 BMS Command Center" },
       { name: "description", content: "Central alarm console: acknowledge, investigate, comment on and close alarms across every building system." },
-      { property: "og:title", content: "Alarms & Events — Meridian BMS" },
+      { property: "og:title", content: "Alarms & Events — R1 BMS Command Center" },
       { property: "og:description", content: "Acknowledge and manage active building alarms with full history." },
     ],
   }),

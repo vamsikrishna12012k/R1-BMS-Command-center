@@ -14,9 +14,9 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/hvac/ahu/$id")({
   head: ({ params }) => ({
     meta: [
-      { title: `${params.id} — AHU Detail · Meridian BMS` },
+      { title: `${params.id} — AHU Detail · R1 BMS Command Center` },
       { name: "description", content: `Live air handling telemetry, duct network and control setpoints for ${params.id}.` },
-      { property: "og:title", content: `${params.id} — AHU Detail · Meridian BMS` },
+      { property: "og:title", content: `${params.id} — AHU Detail · R1 BMS Command Center` },
       { property: "og:description", content: "AHU sectional mimic, duct network and supply air controls." },
     ],
   }),

@@ -11,9 +11,9 @@ import type { Severity } from "@/lib/bms/types";
 export const Route = createFileRoute("/explorer")({
   head: () => ({
     meta: [
-      { title: "Equipment Explorer — Meridian BMS" },
+      { title: "Equipment Explorer — R1 BMS Command Center" },
       { name: "description", content: "Browse the full site hierarchy — campus, building, floor, zone and room — and jump to any connected device." },
-      { property: "og:title", content: "Equipment Explorer — Meridian BMS" },
+      { property: "og:title", content: "Equipment Explorer — R1 BMS Command Center" },
       { property: "og:description", content: "Navigate every device in the campus equipment hierarchy." },
     ],
   }),

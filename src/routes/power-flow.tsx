@@ -11,9 +11,9 @@ import { nf } from "@/lib/bms/format";
 export const Route = createFileRoute("/power-flow")({
   head: () => ({
     meta: [
-      { title: "Power Flow — Meridian BMS" },
+      { title: "Power Flow — R1 BMS Command Center" },
       { name: "description", content: "Animated campus power flow from utility and generator through UPS systems to critical and mechanical loads." },
-      { property: "og:title", content: "Power Flow — Meridian BMS" },
+      { property: "og:title", content: "Power Flow — R1 BMS Command Center" },
       { property: "og:description", content: "Animated end-to-end power distribution visualization." },
     ],
   }),

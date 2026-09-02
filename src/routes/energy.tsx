@@ -9,9 +9,9 @@ import { int, nf } from "@/lib/bms/format";
 export const Route = createFileRoute("/energy")({
   head: () => ({
     meta: [
-      { title: "Energy Management — Meridian BMS" },
+      { title: "Energy Management — R1 BMS Command Center" },
       { name: "description", content: "Campus energy metering: real-time demand, consumption, power factor, max demand and per-meter breakdown." },
-      { property: "og:title", content: "Energy Management — Meridian BMS" },
+      { property: "og:title", content: "Energy Management — R1 BMS Command Center" },
       { property: "og:description", content: "Track building energy demand, consumption and power quality in real time." },
     ],
   }),
